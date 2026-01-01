@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "ae2_infinity_cells:item/infinity_fluid_cell_0",
+    "layer1": "ae2_infinity_cells:item/infinity_fluid_cell_1"
+  }
+}
