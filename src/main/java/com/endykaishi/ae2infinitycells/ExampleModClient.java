@@ -1,4 +1,4 @@
-package com.endykaishi.ae2infinity;
+package com.endykaishi.ae2infinitycells;
 
 import net.minecraft.client.Minecraft;
 import net.neoforged.api.distmarker.Dist;
@@ -11,9 +11,9 @@ import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 
 // This class will not load on dedicated servers. Accessing client side code from here is safe.
-@Mod(value = AE2Infinity.MODID, dist = Dist.CLIENT)
+@Mod(value = AE2InfinityCells.MODID, dist = Dist.CLIENT)
 // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
-@EventBusSubscriber(modid = AE2Infinity.MODID, value = Dist.CLIENT)
+@EventBusSubscriber(modid = AE2InfinityCells.MODID, value = Dist.CLIENT)
 public class ExampleModClient {
     public ExampleModClient(ModContainer container) {
         // Allows NeoForge to create a config screen for this mod's configs.
@@ -25,7 +25,7 @@ public class ExampleModClient {
     @SubscribeEvent
     static void onClientSetup(FMLClientSetupEvent event) {
         // Some client setup code
-        AE2Infinity.LOGGER.info("HELLO FROM CLIENT SETUP");
-        AE2Infinity.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+        AE2InfinityCells.LOGGER.info("HELLO FROM CLIENT SETUP");
+        AE2InfinityCells.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
     }
 }

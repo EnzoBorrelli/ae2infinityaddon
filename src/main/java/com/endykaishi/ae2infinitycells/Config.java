@@ -1,4 +1,4 @@
-package com.endykaishi.ae2infinity;
+package com.endykaishi.ae2infinitycells;
 
 import java.util.List;
 
